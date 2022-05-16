@@ -1,0 +1,23 @@
+<h2>Edicion de elementos {{elementSelect}}</h2>
+<div>
+    <div class="btn-group" role="group" aria-label="Basic example" *ngIf="element.id!=''">
+        <button type="button" class="btn fad fa-border-all btn-light" (click)="border()"></button>
+        <button type="button" class="btn far fa-bold btn-light" (click)="bold()"></button>
+        <button type="button" class="btn fas fa-text btn-light" (click)="sizeTextChange('+')"><i class="far fa-angle-up" style="font-size: 10px;"></i></button>
+        <button type="button" class="btn fas fa-text btn-light" (click)="sizeTextChange('-')"><i class="far fa-angle-down" style="font-size: 10px;"></i></button>
+        <button type="button" class="btn btn-light"><div class="fad fa-brush"></div><div class="Colorpicker"></div></button>
+        <button type="button" class="btn fad fa-align-justify btn-light" (click)="justifyText()"></button>
+        <button type="button" class="btn fal fa-arrows btn-light" (click)="resizable()"></button>
+        <button type="button" class="btn fad fa-trash-alt btn-light" (click)="deleteDom()"></button>
+      </div>
+</div>
+
+<div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Escriba texto</label>
+    <textarea [(ngModel)]="element.value" class="form-control" id="exampleFormControlTextarea1" rows="3">{{element.value}}</textarea>
+</div>
+<div class="mb-3">
+    <label for="formFile" class="form-label">Default file input example</label>
+    <input class="form-control" type="file" id="formFile" (change)="captureFile($event)">
+  </div>
+

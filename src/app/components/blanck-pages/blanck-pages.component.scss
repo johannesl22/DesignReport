@@ -1,0 +1,76 @@
+.draggable {
+  width: 150px;
+  height: 51px;
+  padding: 0.5em;
+  font-size: 12px;
+  position: fixed;
+
+}
+.draggableIMG {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+}
+.A4 {
+  width: 21cm;
+  height: 29.7cm;
+ 
+}
+.border1 {
+  border: solid 1px black;
+
+}
+.bold {
+  font-weight: 700 !important;
+}
+.justify {
+  text-align: justify;
+}
+.scale {
+  overflow: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.select{
+  border: 2px solid rgb(77, 183, 231);
+}
+
+
+//////////////////////////////////
+body{font-size: 9px; font-family:'Poppins';} 
+.logo{ text-align: right;} 
+.bold{ font-size: 11px;font-weight: bold !important;}
+.box{border-style: solid; border-width: 1px; padding: 1px 10px 10px 10px;}
+.p-0{ padding: 0 0 0 0 };
+.boxTop{ border-style: solid; border-width: 0px 1px 1px 1px; padding: 10px 10px 10px 10px;}
+.m0{ margin : 0 0 0 0;}
+.ms-1{ margin : 0 0 0 20px !important; }
+ th{text-align: start;} 
+.header { text-align: right;} 
+.firmaLabel{margin-left: 80px;} 
+.fsize20{font-size: 16px;} 
+.sello{ margin-left: 300px;} 
+.center{text-align: center;}
+.mediumText{font-size: 9px;}
+.smallText{font-size: 6px;}
+.pBox{border-style: solid; border-width: 1px; padding: 1px 1px 1px 1px;}
+.flex-row{float: left;}
+.boxItem{border-style: solid; border-width: 1px; padding: 1px 1px 1px 1px;}
+.p1{ padding: 1px 1px 1px 1px;}
+.m3{ margin : 10px 10px 10px 10px;}
+.centerflex{align-self: center;}
+th{font-weight: normal !important; font-size: 9px; font-family:'Poppins'}
+.borderB{ border-style: solid; border-width: 0 0 1px 0;}
+.TextEnd{text-align: end}
+.bgTable{background-color:rgb(228,228,242);}
+.tableBorder{ padding: 5px;   border-collapse: collapse; margin-top:20px; width:100%} 
+tr{margin : 5px 5px 5px 5px;}
+.rotated{
+  display: inline-block;
+  transform-origin: left top;
+  transform: rotate(270deg) translateX(-100%);
+   width:1000px;
+  margin : 10px 10px 10px -10px;
+ 
+  
+  }

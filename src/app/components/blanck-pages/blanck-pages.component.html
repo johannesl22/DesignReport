@@ -1,0 +1,19 @@
+<!-- se declara el tamaño de la hoja -->
+    <div class="border A4  scale" 
+    (dragover)="dragOver($event)"
+    (drop)="dragDrop($event)"
+    id="containment-wrapper"  
+    
+    appMoveElement
+    >
+    <!-- este div tiene una lista de elementos que se pueden arrastrar -->
+    <div   *ngFor="let e of elementList" class="draggable">
+        <p   *ngIf="e.type=='text'" id="{{e.id}}"class="{{e.class}}"  (click)="select(e);" (focusout)="deselect()">{{e.value}}</p>
+        <img *ngIf="e.type=='IMG'" id="{{e.id}}" src="{{e.value}}"class="{{e.class}}" (click)="select(e);">
+    </div>
+
+    
+    </div>
+
+
+
